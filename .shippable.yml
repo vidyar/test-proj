@@ -2,6 +2,7 @@ language: python
 
 archive: true
 
+
 python:
   - "3.4"
 
@@ -11,6 +12,7 @@ before_install:
 
 install:
   - pip install pytest
+
 
 script:
   - py.test --verbose
