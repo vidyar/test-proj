@@ -1,0 +1,14 @@
+language: python
+
+python:
+  - "3.4"
+
+before_install:
+  - virtualenv -p $SHIPPABLE_PYTHON $HOME/ve/
+  - source $HOME/ve/bin/activate
+
+install:
+  - pip install pytest
+
+script:
+  - py.test -- verbose
