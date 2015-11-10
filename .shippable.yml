@@ -11,4 +11,4 @@ install:
   - pip install pytest
 
 script:
-  - py.test -- verbose
+  - py.test --verbose
